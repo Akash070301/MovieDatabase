@@ -43,8 +43,7 @@ function App() {
               <WatchList movies={watchList} removeWatchList={removeWatchList} setWatchList={setWatchList}/>
             </>
           }
-        />
-        <Route path="*" element={<Navigate to="/" replace />} />
+        />     
       </Routes>
     </BrowserRouter>
   );
