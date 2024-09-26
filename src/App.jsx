@@ -24,7 +24,7 @@ function App() {
     localStorage.setItem('watchList',JSON.stringify(watchList))
   },[watchList])
   return (
-    <BrowserRouter basename="MovieDatabase">
+    <BrowserRouter basename="/MovieDatabase">
       <Navbar />
       <Routes>
         <Route
@@ -44,6 +44,7 @@ function App() {
             </>
           }
         />
+      <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
     </BrowserRouter>
   );
